@@ -1,0 +1,5 @@
+@media (min-width: 576px) {
+    .content-wrapper, .main-footer, .main-header {
+        margin-left: 0px;
+    }
+}

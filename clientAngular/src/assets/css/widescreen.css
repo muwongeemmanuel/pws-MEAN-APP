@@ -1,0 +1,12 @@
+/* menu*/
+#togglebutton{
+	display:none;		
+}
+#myDropdown{
+	display:none;		
+}
+.dropdown-menu a:hover {background-color: skyblue;}
+.dropdown:hover .dropdown-menu {
+	display: block;
+	border-radius:5px;
+}
