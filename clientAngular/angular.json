@@ -50,7 +50,8 @@
               "node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
               "node_modules/admin-lte/plugins/fastclick/fastclick.js",
               "node_modules/admin-lte/dist/js/adminlte.js",
-              "node_modules/admin-lte/dist/js/pages/dashboard.js",
+              "node_modules/admin-lte/dist/js/adminlte.min.js",
+              "node_modules/admin-lte/dist/js/pagfes/dashboard.js",
               "node_modules/admin-lte/dist/js/demo.js"
             ]
           },
