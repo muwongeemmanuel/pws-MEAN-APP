@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>MEN</title>
   <base href="/">
 
@@ -10,9 +11,15 @@
   <!-- external css -->
   <link href="assets/css/smallscreen.css" media="screen and (max-width:991px)" rel="stylesheet">
   <link href="assets/css/widescreen.css" media="screen and (min-width:992px)" rel="stylesheet"> <!-- 1045 -->
-  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+  <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.css"> -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <script src="assets/js/bootstrap.js"></script>
+
+  <!-- adminlte css -->
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- internal css -->
   <style type="text/css">
     /* Set a background image */
@@ -26,7 +33,12 @@
     }
   </style>
 </head>
-<body>
+<body class="hold-transition sidebar-mini layout-fixed">
   <app-root></app-root>
+  
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
 </body>
 </html>
