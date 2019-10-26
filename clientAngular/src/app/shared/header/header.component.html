@@ -1,103 +1,160 @@
-<br><br>
-<nav  id="mainmenu" class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+<nav class="main-header navbar navbar-expand navbar-light navbar-white">
+    <div class="container">
+        <a href="index3.html" class="navbar-brand">
+        <img src="assets/images/image1.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                style="opacity: .8">
+        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        </a>
 
-    <!-- Links -->
-    <ul class="navbar-nav">
-        <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-home fa-stack-5x"></i> Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Hire Me</a>
-        </li>
-
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Blogs
-            </a>
-            <div class="dropdown-menu bg-dark">
-                <a class="dropdown-item text-white" href="#">IT</a>
-                <a class="dropdown-item text-white" href="#">Edutainment</a>
-                <a class="dropdown-item text-white" href="#">Social</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-address-book fa-stack-5x"></i> Contact</a>
-        </li>
-    </ul>
-    <!-- <form class="form-inline ml-auto" [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)" [ngClass]="{'loading': isLoading}" #myForm="ngForm">
-        <input class="form-control mr-sm-2" type="text" placeholder="Keyword" formControlName="keyword">
-        <button class="btn btn-outline-success" type="submit" (click)="search()" [disabled]="!myForm.form.valid">Search</button>
-    </form> -->
-    <form class="form-inline ml-auto">
-        <input class="form-control mr-sm-2" type="text" placeholder="Keyword">
-        <button class="btn btn-outline-success" type="submit" (click)="search()">Search</button>
-    </form>
-</nav>
-<nav id="togglebutton" class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-
-        <!-- Toggler/collapsibe Button -->
-    <button onclick="myFunction(this)" class="dropbtn navbar-toggler">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </button>
-
-    <!-- <form class="form-inline ml-auto" [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)" [ngClass]="{'loading': isLoading}" #myForm="ngForm">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Keyword" formControlName="Keyword" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-success" type="button" (click)="search()" [disabled]="!myForm.form.valid"><i class="fa fa-search"></i></button>
-            </div>
-        </div>
-    </form> -->
-    <form class="form-inline ml-auto">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Keyword" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-success" type="button" (click)="search()"><i class="fa fa-search"></i></button>
-            </div>
-        </div>
-    </form>
-
-    <!-- Navbar links -->
-    <div id="myDropdown" class="collapse navbar-collapse bg-dark" id="collapsibleNavbar" style="position: absolute;margin-top: 150px;margin-left: 0px;padding-left: 10px;width: 200px;border-radius: 5px;">
+        <!-- Left navbar links -->
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-home fa-stack-5x"></i> Home</a>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="index3.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+            <li><a href="#" class="dropdown-item">Some action </a></li>
+            <li><a href="#" class="dropdown-item">Some other action</a></li>
+
+            <li class="dropdown-divider"></li>
+
+            <!-- Level two dropdown-->
+            <li class="dropdown-submenu dropdown-hover">
+                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
+                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
+                </li>
+
+                <!-- Level three dropdown-->
+                <li class="dropdown-submenu">
+                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
+                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                    <li><a href="#" class="dropdown-item">3rd level</a></li>
+                    <li><a href="#" class="dropdown-item">3rd level</a></li>
+                    </ul>
+                </li>
+                <!-- End Level three -->
+
+                <li><a href="#" class="dropdown-item">level 2</a></li>
+                <li><a href="#" class="dropdown-item">level 2</a></li>
+                </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Hire Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-address-book fa-stack-5x"></i> Contact</a>
-            </li> 
+            <!-- End Level two -->
+            </ul>
+        </li>
         </ul>
-    </div> 
+
+        <!-- SEARCH FORM -->
+        <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+            </div>
+        </div>
+        </form>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="fas fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+                </div>
+                <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+                </div>
+                <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+                </div>
+                <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+                class="fas fa-th-large"></i></a>
+        </li>
+        </ul>
+    </div>
 </nav>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction(x) {
-    document.getElementById("myDropdown").classList.toggle("show");
-    x.classList.toggle("change");
-}
-</script>
-
-<br><br>
+<!-- /.navbar -->
