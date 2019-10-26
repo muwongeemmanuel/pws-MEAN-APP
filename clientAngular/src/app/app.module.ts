@@ -10,6 +10,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LinksComponent } from './shared/links/links.component';
 import { AHomeComponent } from './admin/a-home/a-home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { OldComponent } from './old/old.component';
+import { OldFooterComponent } from './old/old-footer/old-footer.component';
+import { OldHeaderComponent } from './old/old-header/old-header.component';
+import { LoginComponent } from './access/login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
     FooterComponent,
     LinksComponent,
     AHomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    OldComponent,
+    OldFooterComponent,
+    OldHeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+@media (min-width: 576px) {
+    .content-wrapper, .main-footer, .main-header {
+        margin-left: 0px;
+    }
+}
+.content-wrapper {
+    background: #f4f6f9;
+        background-color: rgb(0, 0, 0);
+}
