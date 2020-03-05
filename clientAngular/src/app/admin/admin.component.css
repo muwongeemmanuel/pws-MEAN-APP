@@ -1,0 +1,7 @@
+
+/* Inline #10 | http://localhost:4200/admin/contact */
+
+.row {
+    /* display: flex; */
+    display: unset;
+}

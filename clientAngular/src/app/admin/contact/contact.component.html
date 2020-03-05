@@ -1,0 +1,95 @@
+<div class="container">
+    <!-- first row -->
+    <div class="row">
+        <!-- general form elements -->
+        <div class="col-lg-12">
+            <div class="card card-primary" style="width: 100%;">
+                <div class="card-header">
+                    <h3 class="card-title">Quick Example</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form role="form" #contactForm = "ngForm" (submit) = "addContact()">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Contact</label>
+                            <input type="text" [(ngModel)] = "contact_string" name="contact_string" class="form-control" placeholder="Enter Contact String" required>
+                        </div>
+                        <!-- select -->
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select [(ngModel)] = "category" name="category" class="form-control" required>
+                                <option>Mobile</option>
+                                <option>Email</option>
+                                <option>Social</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Client</label>
+                            <input type="text" [(ngModel)] = "client" name="client" class="form-control" placeholder="MTN" required>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <!-- [(ngModel)] = "client" -->
+
+                    <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <!-- /.card -->
+    </div>
+    <!-- second row -->
+    <div class="row">
+        <!-- general form elements -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Contact From Mongo DB</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">ID</th>
+                        <th style="width: 20%">Contact String</th>
+                        <th style="width: 20%">Category</th>
+                        <th style="width: 20%">Client</th>
+                        <th style="width: 20%">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let contact of contacts">
+                            <td>{{ contact._id }}</td>
+                            <td>{{ contact.contact_string }}</td>
+                            <td>{{ contact.category }}</td>
+                            <td>{{ contact.client }}</td>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                            Action
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-item"><a href="#">View</a></li>
+                                            <li class="dropdown-item"><a href="#">Edit</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li class="dropdown-item bg-danger"><a (click)="deleteContact(contact._id)">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /btn-group -->
+                                </div>
+                                <!-- /input-group -->
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+</div>
