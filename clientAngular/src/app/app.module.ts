@@ -17,6 +17,7 @@ import { OldHeaderComponent } from './old/old-header/old-header.component';
 import { LoginComponent } from './access/login/login.component';
 import { ContactComponent } from './admin/contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
+import { TmplteComponent } from './tmplte/tmplte.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AdminComponent } from './admin/admin.component';
     OldHeaderComponent,
     LoginComponent,
     ContactComponent,
-    AdminComponent
+    AdminComponent,
+    TmplteComponent
   ],
   imports: [
     BrowserModule,

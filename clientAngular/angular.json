@@ -32,7 +32,8 @@
               "node_modules/admin-lte/dist/css/adminlte.min.css",
               "node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css",
               "node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css",
-              "node_modules/admin-lte/plugins/summernote/summernote-bs4.css"
+              "node_modules/admin-lte/plugins/summernote/summernote-bs4.css",
+              "src/assets/me/lib/owlcarousel/assets/owl.carousel.min.css"
             ],
             "scripts": [
               "node_modules/admin-lte/plugins/jquery/jquery.min.js",
@@ -51,7 +52,33 @@
               "node_modules/admin-lte/plugins/fastclick/fastclick.js",
               "node_modules/admin-lte/dist/js/adminlte.js",
               "node_modules/admin-lte/dist/js/pages/dashboard.js",
-              "node_modules/admin-lte/dist/js/demo.js"
+              "node_modules/admin-lte/dist/js/demo.js",
+              "src/assets/js/bootstrap.js",
+              "src/assets/me/lib/jquery/jquery.min.js",
+              "src/assets/me/lib/jquery/jquery-migrate.min.js",
+              "src/assets/me/lib/popper/popper.min.js",
+              "src/assets/me/lib/bootstrap/js/bootstrap.min.js",
+              "src/assets/me/lib/easing/easing.min.js",
+              "src/assets/me/lib/counterup/jquery.waypoints.min.js",
+              "src/assets/me/lib/counterup/jquery.counterup.js",
+              "src/assets/me/lib/owlcarousel/owl.carousel.min.js",
+              "src/assets/me/lib/lightbox/js/lightbox.min.js",
+              "src/assets/me/lib/typed/typed.min.js",
+              "src/assets/me/contactform/contactform.js",
+              "src/assets/me/js/main.js",
+              "src/assets/clark/js/jquery.min.js",
+              "src/assets/clark/js/jquery-migrate-3.0.1.min.js",
+              "src/assets/clark/js/popper.min.js",
+              "src/assets/clark/js/bootstrap.min.js",
+              "src/assets/clark/js/jquery.easing.1.3.js",
+              "src/assets/clark/js/jquery.waypoints.min.js",
+              "src/assets/clark/js/jquery.stellar.min.js",
+              "src/assets/clark/js/owl.carousel.min.js",
+              "src/assets/clark/js/jquery.magnific-popup.min.js",
+              "src/assets/clark/js/aos.js",
+              "src/assets/clark/js/jquery.animateNumber.min.js",
+              "src/assets/clark/js/scrollax.min.js",
+              "src/assets/clark/js/main.js"
             ]
           },
           "configurations": {
