@@ -7,10 +7,11 @@ var path = require("path");
 
 var app = express();
 
-const route = require("./routes/route");
+// const route = require("./routes/contact");
+require("./routes")(app);
 
 //connect to mongodb
-mongoose.connect("mongodb://localhost:27017/serverExpress")
+mongoose.connect("mongodb://localhost:27017/serverExpress", { useNewUrlParser: true })
 
 //on connection
 mongoose.connection.on("connected",()=>{
@@ -37,11 +38,14 @@ app.use(bodyparser.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 //routes
-app.use("/api", route);
+// app.use("/api", route);
+// app.use("/contact", require("./routes/contact"));
 
 //testing server
-app.get("/",(req, res)=>{
-    res.send("Muwonge");
+app.get("/api",(req, res)=>{
+    res.send({
+        message: 'Hello from the Express API',
+    });
 })
 app.listen(port,()=>{
     console.log("Server started at port : "+port);
